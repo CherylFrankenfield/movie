@@ -12,31 +12,38 @@
     <div class="container">
       <h1>Welcome to '80s Movie Time Fun Theater</h1>
         <div class="form-group">
-          <label for="movieList">What movie do you want to view?</label>
-          <select class="custom-select" id="best">
-            <option value="0">Select an option below.</option>
-            <option value="1">Rambo</option>
-            <option value="2">Blade Runner</option>
-            <option value="3">The Fly</option>
+          <label for="movie">What movie do you want to view?</label>
+          <select class="form-control" id="movie">
+            <option selected>Select an option below.</option>
+            <option>Rambo</option>
+            <option>Blade Runner</option>
+            <option>The Fly</option>
           </select>
-          <button id="buttonMovie" type="button" name="button">Submit</button>
         </div>
         <div class="form-group">
-          <label for="movieTimes">What time?</label>
-          <select class="custom-select" id="best">
-            <option value="0">Select an option below.</option>
-            <option value="1"></option>
+          <label for="showtime">What time?</label>
+          <select class="form-control" id="showtime">
+            <option selected>Select an option below.</option>
+            <option value="1:00">1:00</option>
+            <option value="4:30">4:30</option>
+            <option value="7:00">7:00</option>
           </select>
-          <button id="buttonTime" type="button" name="button">Submit</button>
         </div>
         <div class="form-group">
-          <label for="movieTicket">Which ticket?</label>
-          <select class="custom-select" id="best">
-            <option value="0">Select an option below.</option>
-            <option value="1">Adult Regular ticket</option>
-            <option value="2">Senior ticket</option>
+          <label for="ticket">Which ticket?</label>
+          <select class="form-control" id="ticket">
+            <option selected>Select an option below.</option>
+            <option value="adult">Adult regular ticket</option>
+            <option value="senior">Senior ticket</option>
+            <option value="child">Child ticket</option>
           </select>
-          <button id="buttonTicket" type="button" name="button">Submit</button>
+        </div>
+        <button id="button" type="button" name="button">Submit</button>
+
+        <div id="ticketResult">
+          <p>Congrats! You have purchased the following:</p>
+          <ul id="yourShow">
+          </ul>
         </div>
 
 
